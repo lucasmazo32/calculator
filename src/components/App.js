@@ -18,7 +18,7 @@ Display.propTypes = {
 
 function Button(props) {
   const { name } = props;
-  return <button type='button'>{name}</button>;
+  return <button type="button">{name}</button>;
 }
 
 Button.propTypes = {
