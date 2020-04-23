@@ -2,8 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Display(props) {
+  const { result } = props;
   return (
-    <span className="display">{props.result}</span>
+    <span className="display">{result}</span>
   );
 }
 
@@ -16,11 +17,12 @@ Display.propTypes = {
 };
 
 function Button(props) {
-  return <button>{props.name}</button>;
+  const { name } = props;
+  return <button type='button'>{name}</button>;
 }
 
 Button.propTypes = {
-  name: PropTypes.string,
+  name: PropTypes.string.isRequired,
 };
 
 function ButtonPanel() {
