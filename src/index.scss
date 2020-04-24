@@ -27,13 +27,10 @@ body {
 .btn-container {
   display: flex;
   button {
-    background-color: #e1e1e1;
     border: 1px solid #858585;
     font-size: 2rem;
     height: 100px;
-    flex-basis: 25%;
     &:last-child {
-      background-color: #f5913e;
       &:hover {
         background-color: #fa8423;
         transition: all 0.2s ease;
@@ -43,12 +40,6 @@ body {
       background-color: lightgray;
       transition: all 0.2s ease;
     }
-  }
-}
-
-.t-btn {
-  button:first-child {
-      flex-basis: 50%;
   }
 }
 
