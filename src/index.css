@@ -1,13 +1,78 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-size: 10px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 700px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  margin: 0 auto;
 }
+
+.display {
+  background-color: #858694;
+  color: white;
+  font-size: 3rem;
+  padding-right: 10px;
+  line-height: calc(100/48);
+  text-align: right;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+.btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.btn-container button {
+  background-color: #e1e1e1;
+  border: 1px solid #858585;
+  font-size: 2rem;
+  height: 100px;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.btn-container button:last-child {
+  background-color: #f5913e;
+}
+
+.btn-container button:last-child:hover {
+  background-color: #fa8423;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.btn-container button:hover {
+  background-color: lightgray;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.t-btn button:first-child {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    width: 100%;
+  }
+  .btn-container button {
+    height: calc(97vh/6);
+  }
+  .display {
+    height: calc(97vh/6);
+  }
+}
+/*# sourceMappingURL=index.css.map */
