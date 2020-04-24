@@ -1,8 +1,35 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
 
-## Available Scripts
+* [About the Project](#about-the-project)
+* [Live version](#live-version)
+* [Built With](#built-with)
+* [Getting Started](#getting-started)
+* [License](#license)
+* [Contact](#contact)
+* [Acknowledgements](#acknowledgements)
 
-In the project directory, you can run:
+
+<!-- about-the-project -->
+# About the project
+
+Description will go here.
+
+## Live version
+
+> [Here](https://calculator-lucas.herokuapp.com/)
+
+## Built with
+
+- Node v13.11.0
+- npm v6.13.7
+- React v16.13.1
+- Jest
+
+## Getting started
+
+To get a local copy up and running follow these simple steps.
+
+Clone or fork the [repository](https://github.com/lucasmazo32/calculator).
 
 ### `npm start`
 
@@ -22,47 +49,16 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+# License
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+> MIT
 
-### `npm run eject`
+# Contact
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Lucas Mazo:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Twitter: [@lucasmazo32](https://twitter.com/lucasmazo32)
+- Github: [lucasmazo32](https://github.com/lucasmazo32)
+- LinkedIn: [Lucas Mazo](https://www.linkedin.com/in/lucasmazo/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+# Acknowledgements
