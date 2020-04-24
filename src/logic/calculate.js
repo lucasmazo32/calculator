@@ -4,8 +4,8 @@ import Big from 'big.js';
 import operate from './operate';
 
 export default function calculate(calculator, btnName) {
-  let newTotal = Big(calculator.newTotal);
-  let newNext = Big(calculator.newNext);
+  let newTotal = Big(calculator.total);
+  let newNext = Big(calculator.next);
   const { operation } = calculator;
   switch (btnName) {
     case '+/-':
@@ -19,6 +19,10 @@ export default function calculate(calculator, btnName) {
     case '%':
       newTotal /= 100;
       newNext /= 100;
+      break;
+    case '.':
+      newTotal += '.';
+      newNext += '.';
       break;
     default:
       newTotal = operate(newTotal, newNext, operation);
