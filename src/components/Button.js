@@ -14,10 +14,7 @@ function styleObj(wide, color) {
   };
 }
 
-export default function Button(props) {
-  const { name } = props;
-  const { color } = props;
-  const { wide } = props;
+export default function Button({ name, color, wide }) {
   const btnStyle = styleObj(wide, color);
   return <button type="button" style={btnStyle}>{name}</button>;
 }

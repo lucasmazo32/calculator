@@ -1,38 +1,41 @@
 import React from 'react';
 import Button from './Button';
 
+const names = [
+  ['AC', '+/-', '%', '÷'],
+  ['7', '8', '9', 'X'],
+  ['4', '5', '6', '-'],
+  ['1', '2', '3', '+'],
+  ['0', '.', '='],
+];
+
+let count = 0;
+
+function helper(array) {
+  count += 1;
+  return (
+    <div key={count} className="btn-container">
+      {
+        array.map(element => {
+          if (element === array[array.length - 1]) {
+            return <Button key={element} name={element} />;
+          }
+          if (element === '0') {
+            return <Button key={element} name={element} color="#e1e1e1" wide />
+          }
+          return <Button key={element} name={element} color="#e1e1e1" />;
+        })
+      }
+    </div>
+  );
+}
+
 export default function ButtonPanel() {
   return (
     <div>
-      <div className="btn-container">
-        <Button name="AC" color="#e1e1e1" />
-        <Button name="+/-" color="#e1e1e1" />
-        <Button name="%" color="#e1e1e1" />
-        <Button name="÷" />
-      </div>
-      <div className="btn-container">
-        <Button name="7" color="#e1e1e1" />
-        <Button name="8" color="#e1e1e1" />
-        <Button name="9" color="#e1e1e1" />
-        <Button name="X" />
-      </div>
-      <div className="btn-container">
-        <Button name="4" color="#e1e1e1" />
-        <Button name="5" color="#e1e1e1" />
-        <Button name="6" color="#e1e1e1" />
-        <Button name="-" />
-      </div>
-      <div className="btn-container">
-        <Button name="1" color="#e1e1e1" />
-        <Button name="2" color="#e1e1e1" />
-        <Button name="3" color="#e1e1e1" />
-        <Button name="+" />
-      </div>
-      <div className="btn-container">
-        <Button name="0" color="#e1e1e1" wide />
-        <Button name="." color="#e1e1e1" />
-        <Button name="=" />
-      </div>
+      {
+        names.map(subArray => helper(subArray))
+      }
     </div>
   );
 }

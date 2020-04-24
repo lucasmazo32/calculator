@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function Display(props) {
-  const { result } = props;
+export default function Display({ result }) {
   return (
     <span className="display">{result}</span>
   );
