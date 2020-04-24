@@ -21,7 +21,7 @@ function helper(array) {
             return <Button key={element} name={element} />;
           }
           if (element === '0') {
-            return <Button key={element} name={element} color="#e1e1e1" wide />
+            return <Button key={element} name={element} color="#e1e1e1" wide />;
           }
           return <Button key={element} name={element} color="#e1e1e1" />;
         })
