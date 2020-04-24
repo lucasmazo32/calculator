@@ -1,3 +1,5 @@
+/* eslint-disable import/extensions */
+
 import Big from 'big.js';
 import operate from './operate';
 
