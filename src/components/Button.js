@@ -14,9 +14,11 @@ function styleObj(wide, color) {
   };
 }
 
-export default function Button({ name, color, wide }) {
+export default function Button({
+  name, color, wide, onClick,
+}) {
   const btnStyle = styleObj(wide, color);
-  return <button type="button" style={btnStyle}>{name}</button>;
+  return <button type="button" style={btnStyle} onClick={() => onClick(name)}>{name}</button>;
 }
 
 Button.defaultProps = {
@@ -28,4 +30,5 @@ Button.propTypes = {
   name: PropTypes.string.isRequired,
   color: PropTypes.string,
   wide: PropTypes.bool,
+  onClick: PropTypes.func.isRequired,
 };

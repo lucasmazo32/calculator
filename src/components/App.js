@@ -14,12 +14,19 @@ class App extends React.Component {
   }
 
   handleClick(buttonName) {
-    const { total, next } = this.state;
-    const result = calculate(total, next, buttonName);
+    let { total, next } = this.state;
+    const { operation } = this.state;
+    if (total === null) {
+      total = '0';
+    }
+    if (next === null) {
+      next = '0';
+    }
+    const result = calculate({ total, next, operation }, buttonName);
     this.setState({
       total: next,
       operation: buttonName,
-      next: result,
+      next: result.toString(),
     });
   }
 
@@ -28,7 +35,7 @@ class App extends React.Component {
     return (
       <div className="container">
         <Display result={next || '0'} />
-        <ButtonPanel onClick={this.handleClick} />
+        <ButtonPanel onClick={i => this.handleClick(i)} />
       </div>
     );
   }
