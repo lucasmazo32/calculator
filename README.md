@@ -12,7 +12,7 @@
 <!-- about-the-project -->
 # About the project
 
-Description will go here.
+Description will go here
 
 ## Live version
 
