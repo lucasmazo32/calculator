@@ -7,7 +7,7 @@ export default function operate(numberOne, numberTwo, operation) {
   const num2 = Big(numberTwo);
   switch (operation) {
     case '÷':
-      if (num2 === 0) {
+      if (num2.toString() === '0') {
         return 'Undefined';
       }
       return num1.div(num2);

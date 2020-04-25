@@ -19,7 +19,7 @@ class App extends React.Component {
     if (total === null) {
       total = '0';
     }
-    if (next === null) {
+    if (next === null || next === 'Undefined') {
       next = '0';
     }
     const result = calculate({ total, next, operation }, buttonName);

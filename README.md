@@ -12,7 +12,19 @@
 <!-- about-the-project -->
 # About the project
 
-Description will go here.
+![image](calculator.PNG)
+
+Calculator is a Microverse project using REACT. The objective of the project is to understand how to build REACT applications using the ES6 syntax. The calculator works as expected and includes awesome features, for instance:
+
+- You can't type more than two decimal points in one number (eg. 123.4 is allowed, whereas 123.4. or 123.. is not allowed. You can type 12.5+10.8).
+
+- You can not change signs or take the percentage if you typed an operator (eg. You can not change signs of 124+).
+
+- You can not type more than two operators in the same expression (eg. 1+2+ is not allowed).
+
+To complete all these features, the use of Regular expressions is a must.
+
+Enjoy!
 
 ## Live version
 
@@ -20,7 +32,7 @@ Description will go here.
 
 ## Built with
 
-- Node v13.11.0
+- Node v14.0.0
 - npm v6.13.7
 - React v16.13.1
 - Jest
@@ -60,5 +72,3 @@ Lucas Mazo:
 - Twitter: [@lucasmazo32](https://twitter.com/lucasmazo32)
 - Github: [lucasmazo32](https://github.com/lucasmazo32)
 - LinkedIn: [Lucas Mazo](https://www.linkedin.com/in/lucasmazo/)
-
-# Acknowledgements
