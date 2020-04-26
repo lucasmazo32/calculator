@@ -76,6 +76,12 @@ export default function calculate(calculation, btnName) {
         } else {
           newNext = `${next}${btnName}`;
         }
+      } else if (next === '-') {
+        if (opRegex.test(btnName)) {
+          newNext = next;
+        } else {
+          newNext = `${next}${btnName}`;
+        }
       } else {
         newNext = `${next}${btnName}`;
       }
