@@ -8,7 +8,6 @@ export default function calculate(calculation, btnName) {
   const opRegex = /[+\-÷X]/;
   const lengthRegex = /[+\-÷X]/g;
   const opRegexFirst = /[+÷X]/;
-  const operatorRegex = /^-\d+\.*\d*[+\-÷X]/;
   const startingNegative = /^-\d+\.*\d*$/;
   const plusMinus = /^-*\d+\.*\d*[+\-÷X]/;
   const eqReg = /[+\-÷X]\.*\d+/;
