@@ -70,7 +70,7 @@ export default function calculate(calculation, btnName) {
         }
       } else if (startingNegative.test(next)) {
         newNext = `${next}${btnName}`;
-      } else if (operatorRegex.test(next)) {
+      } else if (opRegex.test(next)) {
         if (opRegex.test(btnName)) {
           newNext = next;
         } else {
