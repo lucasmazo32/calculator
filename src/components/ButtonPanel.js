@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Button from './Button';
 
 const names = [
@@ -11,31 +12,36 @@ const names = [
 
 let count = 0;
 
-function helper(array) {
+function helper(array, handleClick) {
   count += 1;
   return (
     <div key={count} className="btn-container">
       {
         array.map(element => {
           if (element === array[array.length - 1]) {
-            return <Button key={element} name={element} />;
+            return <Button key={element} name={element} onClick={name => handleClick(name)} />;
           }
           if (element === '0') {
-            return <Button key={element} name={element} color="#e1e1e1" wide />;
+            return <Button key={element} name={element} onClick={name => handleClick(name)} color="#e1e1e1" wide />;
           }
-          return <Button key={element} name={element} color="#e1e1e1" />;
+          return <Button key={element} name={element} onClick={name => handleClick(name)} color="#e1e1e1" />;
         })
       }
     </div>
   );
 }
 
-export default function ButtonPanel() {
+export default function ButtonPanel({ onClick }) {
+  const handleClick = onClick;
   return (
     <div>
       {
-        names.map(subArray => helper(subArray))
+        names.map(subArray => helper(subArray, handleClick))
       }
     </div>
   );
 }
+
+ButtonPanel.propTypes = {
+  onClick: PropTypes.func.isRequired,
+};
